@@ -10,7 +10,7 @@ require Exporter;
 @ISA       = qw(Exporter Exception::Class::Base);
 @EXPORT    = qw(&try &catch &throw &finally);
 @EXPORT_OK = qw(&isThrowing &deactivate &handleWarn &handleDie &make);
-$VERSION   = '0.02';
+$VERSION   = '0.03';
 
 my $DEFAULT_UNCAUGHT = "Exception of type %s thrown but not caught";
 my %PROTECTED = map { $_ => 1 } qw(Message);
